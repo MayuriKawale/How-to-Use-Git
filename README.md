@@ -52,3 +52,4 @@ This repository is made for people who are getting started to use Git
    ```
    git push --set-upstream [url to the new repository] [branch-name]
    ```
+2) To add all untracked or modified files, use `git add .`
