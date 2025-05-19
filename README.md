@@ -13,6 +13,7 @@ This repository is made for people who are getting started to use Git
    git init
    ```
    When you initialize, then you should see the following in your local repository
+   
    ![image](https://github.com/user-attachments/assets/f2e5c26f-f4a3-4410-9e8a-99b81fa03e7e)
 
 ## General Tips:
