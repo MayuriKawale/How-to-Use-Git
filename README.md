@@ -1,6 +1,7 @@
 This repository is made for people who are getting started to use Git
 
 # Creating a Local Repository:
+By default, there is a single branch named `master`. Every other branch is like a independent development on the `master` branch.
 1) Make a new directory
    Create a directory which will be your local repository
    ```
@@ -49,17 +50,23 @@ This repository is made for people who are getting started to use Git
    To see a condensed version use, `git log --oneline`.
    To see only 5 recent commits instead of all, use `git log -5`
    
+# Remote Repository:
+Generally represented by `origin`
+1) Cloning vs Adding a remote repository
+   When you don't have a local repository, then you `clone` the remote.
+   When you have a local repository, then you `add` the remote.
 
-
-   
-   
-
-   
-
-
-## General Tips:
-1) To push a local repository's branch to a new repository, different from the origin remote repository:
+# General Tips:
+1) To add all untracked or modified files, use `git add .`
+2) To display information about remote repository, use `git remote --verbose` or `git remote -v`
+3) To add a remote repository to an local repository, run the command `git remote add origin <url-of-the-remote-repository>` inside your local repository.
+   Here, `origin` will be the alias for the url provided.
+4) To push local commits to remote for the first time, use `git push [-u] [<repository(name/alias)/URL>] [<branch>]`.
+   `-u` is used to track the branch. You can use `-u` or `--set-upstream`.
+   For e.g.: `git push -u origin master`.
+   Note: Everything within `[]` is optional. Without it, git will use the defaults which are the previous values used when you first pushed to a remote branch.
+6) To push a local repository's branch to a new repository, different from the origin remote repository:
    ```
-   git push --set-upstream [url to the new repository] [branch-name]
+   git push [--set-upstream] [url to the new repository] [branch-name]
    ```
-2) To add all untracked or modified files, use `git add .`
+   
