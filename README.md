@@ -40,6 +40,14 @@ This repository is made for people who are getting started to use Git
    ![image](https://github.com/user-attachments/assets/1d6c2597-96a4-4fb5-bde9-c5acda6ebd80)
    ![image](https://github.com/user-attachments/assets/f0a43e89-8465-4703-b20d-2994371ce64e)
 
+3) Commit the staged changes using  `git commit`
+   Use `git commit -m ` followed by your commit message. If you don't use `-m` flag then a default editor will open to store your commit message
+   
+5) View commit history using  `git log`
+   To see a condensed version use, `git log --oneline`.
+   To see only 5 recent commits instead of all, use `git log -5`
+   
+
 
    
    
